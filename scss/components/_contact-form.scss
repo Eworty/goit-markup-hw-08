@@ -1,0 +1,134 @@
+.contact-form__label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.16;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+.contact-form__control {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.contact-form__input {
+  width: 100%;
+  height: 40px;
+  padding: 12px 12px 12px 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    border-color: var(--accent-background-color);
+    outline: none;
+  }
+}
+
+.contact-form__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  fill: var(--primary-text-color);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .contact-form__input:focus+& {
+    fill: var(--accent-text-color);
+  }
+}
+
+.contact-form__textarea {
+  height: 120px;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px 16px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    border-color: var(--accent-background-color);
+    outline: none;
+  }
+}
+
+.checkbox-control__content {
+  padding-left: 36px;
+}
+
+.checkbox-control__input {
+  appearance: none;
+}
+
+.checkbox-control {
+  position: relative;
+
+  margin-bottom: 30px;
+}
+
+.checkbox-control__label {
+  font-size: 12px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkbox-control__input:checked~.checkbox-control__icon-check {
+  opacity: 1;
+  z-index: 1;
+}
+
+.checkbox-control__terms-link {
+  color: var(--accent-text-color);
+  text-decoration: underline;
+}
+
+.checkbox-control__form-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  fill: var(--primary-text-color);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox-control__icon-check {
+  opacity: 0;
+}
+
+.contact-form__send {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form__button-submit {
+  height: 50px;
+  width: 200px;
+  font-weight: 700;
+  color: var(--white-color);
+  background-color: var(--accent-background-color);
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+}

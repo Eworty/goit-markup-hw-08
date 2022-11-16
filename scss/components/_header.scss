@@ -1,0 +1,143 @@
+.header {
+  border: 1px solid #ececec;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__list {
+  display: flex;
+}
+
+@media screen and(max-width: 767px) {
+  .header__list {
+    display: none;
+  }
+}
+
+.header__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header__link {
+  position: relative;
+  display: block;
+  padding: 32px 0px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--primary-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+  }
+}
+
+
+/* Address */
+.header-address {
+  display: none;
+  margin-left: auto;
+}
+
+.header-address__icon {
+  margin-right: 8px;
+}
+
+@media screen and(min-width:768px) {
+
+
+  .header-address {
+    display: block;
+  }
+
+  .header-address__item:first-child {
+    margin-bottom: 10px;
+  }
+
+  .header-address__link {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: .02em;
+    color: var(--secondary-text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+
+@media screen and(min-width:1200px) {
+  .header-address {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .header-address__item:first-child {
+    margin-bottom: 0px
+  }
+
+  .header-address__item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+// @media screen and(min-width:1200px) {
+//   .header-address {
+//     display: flex;
+//     align-items: center;
+//   }
+
+//   .header-address__item:not(:last-child) {
+//     margin-right: 50px;
+
+
+//   }
+// }
+
+
+.header-address__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--secondary-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+    fill: var(--accent-text-color);
+  }
+}
+
+.current {
+  color: var(--accent-text-color);
+
+  &::after {
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    height: 4px;
+    width: 100%;
+    background-color: var(--accent-background-color);
+    border-radius: 2px;
+    content: '';
+  }
+}
+
+.mobile-menu__nav-link.current {
+  color: var(--accent-text-color);
+}
