@@ -705,7 +705,7 @@ img {
   content: "";
 }
 
-.mobile-menu__nav-link.current {
+.mobile-menu__nav-link.mobile-menu__current {
   color: var(--accent-text-color);
 }
 
