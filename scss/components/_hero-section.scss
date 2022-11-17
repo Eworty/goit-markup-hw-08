@@ -82,6 +82,13 @@
   color: var(--white-color);
 }
 
+@media screen and (min-width:1200px) {
+  .hero__title {
+    font-size: 44px;
+  }
+
+}
+
 .hero__button {
   padding: 10px 32px;
 

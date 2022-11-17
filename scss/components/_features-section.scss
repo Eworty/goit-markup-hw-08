@@ -8,6 +8,10 @@
   .features__item {
     width: 354px;
 
+    &:nth-child(-n+2) {
+      margin-bottom: 30px;
+    }
+
     &:nth-child(2n + 1) {
       margin-right: 30px;
     }
@@ -17,8 +21,8 @@
     height: 120px;
     width: 100%;
   }
-
 }
+
 
 @media screen and(min-width:1200px) {
   .features__list {
@@ -75,9 +79,14 @@
   text-transform: uppercase;
 }
 
-.features__list-text {
-  margin-bottom: 30px;
+@media screen and(min-width:768px) {
+  .features__list-title {
+    text-align: start;
+  }
 
+}
+
+.features__list-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;

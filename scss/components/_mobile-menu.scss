@@ -1,17 +1,25 @@
 .mobile-menu {
   display: none;
-  position: absolute;
+  position: fixed;
   padding: 48px 40px;
-}
-
-.mobile-menu.is-open {
-  display: block;
-  position: absolute;
   width: 100%;
+  height: 100%;
   top: 0;
   right: 0;
+  z-index: 999;
   background-color: white;
+
+  &.is-open {
+    display: block;
+  }
 }
+
+.mobile-menu__container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
 
 .mobile-menu__burger-button {
   padding: 0px;
@@ -39,7 +47,7 @@
 }
 
 .mobile-menu__nav {
-  margin-bottom: 302px;
+  width: 100%;
 }
 
 .mobile-menu__nav-item:not(:last-child) {
