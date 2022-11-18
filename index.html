@@ -69,7 +69,7 @@
 
     <section class="features section">
       <div class="container">
-        <h2 class="is-hidden">Особливості</h2>
+        <h2 class="visually-hidden">Особливості</h2>
         <ul class="features__list list">
           <li class="features__item">
             <div class="features__icons">
@@ -150,8 +150,14 @@
         <h2 class="team__title">Наша команда</h2>
         <ul class="team__list list">
           <li class="team__item">
-            <img srcset="./images/img1.jpg 1x, ./images/img1@2x.jpg 2x" src="./images/img1.jpg" alt="Зображений чоловік"
-              width="450px" />
+            <picture>
+              <source media="(min-width:1200px)" srcset="./images/img1-desktop.jpg 1x, ./images/img1-desktop@2x.jpg 2x"
+                src="./images/img1-desktop.jpg">
+              <source media="(min-width:768px)" srcset="./images/img1-tablet.jpg 1x, ./images/img1-tablet@2x.jpg 2x"
+                src="./images/img1-tablet.jpg">
+              <img srcset="./images/img1.jpg 1x, ./images/img1@2x.jpg 2x" src="./images/img1.jpg"
+                alt="Зображений чоловік" width="450px" />
+            </picture>
             <div class="personal-content">
               <h3 class="personal-content__title">Ігор Дем'яненко</h3>
               <p class="personal-content__text">Product Designer</p>
@@ -188,8 +194,14 @@
             </div>
           </li>
           <li class="team__item">
-            <img srcset="./images/img2.jpg 1x, ./images/img2@2x.jpg 2x" src="./images/img2.jpg" alt="Зображена жінка"
-              width="450px" />
+            <picture>
+              <source media="(min-width:1200px)" srcset="./images/img2-desktop.jpg 1x, ./images/img2-desktop@2x.jpg 2x"
+                src="./images/img2-desktop.jpg">
+              <source media="(min-width:768px)" srcset="./images/img2-tablet.jpg 1x, ./images/img2-tablet@2x.jpg 2x"
+                src="./images/img2-tablet.jpg">
+              <img srcset="./images/img2.jpg 1x, ./images/img2@2x.jpg 2x" src="./images/img2.jpg" alt="Зображена жінка"
+                width="450px" />
+            </picture>
             <div class="personal-content">
               <h3 class="personal-content__title">Ольга Рєпіна</h3>
               <p class="personal-content__text">Frontend Developer</p>
@@ -226,8 +238,13 @@
             </div>
           </li>
           <li class="team__item">
-            <img srcset="./images/img3.jpg 1x, ./images/img3@2x.jpg 2x" src="./images/img3.jpg" alt="Зображений чоловік"
-              width="450px" />
+            <picture>
+              <source media="(min-width:1200px)" srcset="./images/img3-desktop.jpg 1x, ./images/img3-desktop@2x.jpg 2x"
+                src="./images/img3-desktop.jpg">
+              <source media="(min-width:768px)" srcset="./images/img3-tablet.jpg 1x, ./images/img3-tablet@2x.jpg 2x"
+                src="./images/img3-tablet.jpg"><img srcset="./images/img3.jpg 1x, ./images/img3@2x.jpg 2x"
+                src="./images/img3.jpg" alt="Зображений чоловік" width="450px" />
+            </picture>
             <div class="personal-content">
               <h3 class="personal-content__title">Микола Тарасов</h3>
               <p class="personal-content__text">Marketing</p>
@@ -264,8 +281,14 @@
             </div>
           </li>
           <li class="team__item">
-            <img srcset="./images/img4.jpg 1x, ./images/img4@2x.jpg 2x" src="./images/img4.jpg" alt="Зображений чоловік"
-              width="450px" />
+            <picture>
+              <source media="(min-width:1200px)" srcset="./images/img4-desktop.jpg 1x, ./images/img4-desktop@2x.jpg 2x"
+                src="./images/img4-desktop.jpg">
+              <source media="(min-width:768px)" srcset="./images/img4-tablet.jpg 1x, ./images/img4-tablet@2x.jpg 2x"
+                src="./images/img4-tablet.jpg">
+              <img srcset="./images/img4.jpg 1x, ./images/img4@2x.jpg 2x" src="./images/img4.jpg"
+                alt="Зображений чоловік" width="450px" />
+            </picture>
             <div class="personal-content">
               <h3 class="personal-content__title">Михайло Єрмаков</h3>
               <p class="personal-content__text">UI Designer</p>
